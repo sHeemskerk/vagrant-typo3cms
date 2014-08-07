@@ -1,0 +1,28 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    doc_root: /vagrant
+    sys_packages:
+    - sendmail
+    - nfs-common
+    - nfs-kernel-server
+    - portmap
+    - git
+    - imagemagick
+    php_packages:
+    - php5-mysql
+    - php5-curl
+    - php5-imagick
+    - php5-gd
+    - php5-xcache
+    - php5-dev #needed for xdebug
+    - php-pear #needed for xdebug
+    - php5-xdebug
+    php_ppa: php5-oldstable
+  roles:
+    - init
+    - apache
+    - mysql
+    - php5
+    - phpcommon
