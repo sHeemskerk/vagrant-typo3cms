@@ -1,7 +1,7 @@
-vagrant-typo3cms
+Vagrant setup for TYPO3CMS
 ================
 
-Vagrant setup for TYPO3CMS. Ansible will install all required setups for the server environment.
+Ansible will install all required packages for the server environment.
 TYPO3 environment checks will just run fine.
 
 Environment
@@ -20,7 +20,6 @@ Environment
 
 Installation
 --------------
-
 *used VirtualBox 4.3.14, Vagrant 1.6.3 & Ansible 1.6.10*
 
 1. Install both: [Vagrant](https://www.vagrantup.com/downloads.html) & [Ansible](http://docs.ansible.com/intro_installation.html)
@@ -48,3 +47,7 @@ Installation
 6. Follow installation instructions
 
 7. Run command `vagrant halt` to shutdown
+
+ToDos
+--------------
+* include PHP suhosin extension
