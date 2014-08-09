@@ -16,8 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "dev.typo3.local"
   config.ssh.forward_agent = true
 
-  config.vm.synced_folder "src/", "/var/www", owner: "www-data",
-    group: "www-data", disabled: false
+  config.vm.synced_folder "src/", "/var/www", type: "nfs", disabled: false
 
   config.vm.provider :virtualbox do |v|
     v.name = "TYPO3CMS"
