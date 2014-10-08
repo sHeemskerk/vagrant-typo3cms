@@ -52,7 +52,7 @@ Installation
     ln -s typo3_src/typo3 typo3 
     ln -s typo3_src/index.php index.php 
     touch FIRST_INSTALL
-    ``
+    ```
 
 5. Setup TYPO3
 
