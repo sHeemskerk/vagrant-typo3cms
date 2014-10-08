@@ -24,6 +24,6 @@
 
 - name: Change default apache2.2 site
   sudo: yes
-  template: src=vhost.conf.tpl dest=/etc/apache2/sites-available/default.conf
+  template: src=vhost.conf.tpl dest=/etc/apache2/sites-available/default
   notify: restart apache
   when: apache_version.stdout.find('Apache/2.2.') != -1
