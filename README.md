@@ -43,7 +43,7 @@ Installation
     sudo sh -c 'echo "192.168.13.37 t3-cms.dev" >> /etc/hosts'
     ``` 
 
-5. Create folder "vHosts/t3-cms" and extract TYPO3 source/dummy package:
+5. Create folder `vHosts/t3-cms` and extract TYPO3 source/dummy package:
 
     ```
     wget "http://get.typo3.org/6.2.5" -O typo3_src.tgz 
