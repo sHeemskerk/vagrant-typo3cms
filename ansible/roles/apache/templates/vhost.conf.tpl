@@ -32,12 +32,12 @@ NameVirtualHost *:80
     ServerName local.dev
     ServerAlias *.dev
     VirtualDocumentRoot {{ doc_root }}/%-2+/Web
-    SetEnv T3_CONTEXT Development
+    SetEnv TYPO3_CONTEXT Development
 </VirtualHost>
  
 <VirtualHost *:80>
     ServerName local.prod
     ServerAlias *.prod
     VirtualDocumentRoot {{ doc_root }}/%-2+/Web
-    SetEnv T3_CONTEXT Production
+    SetEnv TYPO3_CONTEXT Production
 </VirtualHost>
