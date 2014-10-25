@@ -10,6 +10,8 @@
     - portmap
     - git
     - imagemagick
+    - openjdk-7-jdk
+    - unzip
     php_packages:
     - php5-mysql
     - php5-curl
