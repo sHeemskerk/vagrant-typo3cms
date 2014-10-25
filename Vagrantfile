@@ -27,21 +27,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |virtualbox, override|
     override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", :nfs => true 
 
-    virtualbox.customize ["modifyvm", :id, "--memory", 1024]
+    virtualbox.customize ["modifyvm", :id, "--memory", 2048]
     virtualbox.customize ["modifyvm", :id, "--cpus", 2]
   end
 
   config.vm.provider "vmware_fusion" do |vmware_fusion, override|
     override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", :nfs => true 
 
-    vmware_fusion.vmx["memsize"] = "1024"
+    vmware_fusion.vmx["memsize"] = "2048"
     vmware_fusion.vmx["numvcpus"] = "2"
   end
 
   config.vm.provider "vmware_workstation" do |vmware_workstation, override|
     override.vm.synced_folder "vHosts/", "/var/www/", owner: "www-data", group: "www-data" , type: "rsync"
 
-    vmware_workstation.vmx["memsize"] = "1024"
+    vmware_workstation.vmx["memsize"] = "2048"
     vmware_workstation.vmx["numvcpus"] = "2"
   end
 
