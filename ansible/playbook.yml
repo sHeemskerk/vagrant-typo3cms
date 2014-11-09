@@ -17,7 +17,7 @@
     - php5-curl
     - php5-imagick
     - php5-gd
-    - php5-xcache
+    - php-apc
     - php5-dev #needed for xdebug
     - php-pear #needed for xdebug
     - php5-xdebug
