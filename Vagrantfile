@@ -25,14 +25,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # override provider settings
   config.vm.provider "virtualbox" do |virtualbox, override|
-    override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", type: "nfs", nfs_version: "4,nolock"
+    override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", type: "nfs"
 
     virtualbox.customize ["modifyvm", :id, "--memory", 2048]
     virtualbox.customize ["modifyvm", :id, "--cpus", 2]
   end
 
   config.vm.provider "vmware_fusion" do |vmware_fusion, override|
-    override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", type: "nfs", nfs_version: "4,nolock"
+    override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", type: "nfs"
 
     vmware_fusion.vmx["memsize"] = "2048"
     vmware_fusion.vmx["numvcpus"] = "2"
