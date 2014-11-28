@@ -12,6 +12,7 @@
     - imagemagick
     - openjdk-7-jdk
     - unzip
+    - mailutils
     php_packages:
     - php5-mysql
     - php5-curl
