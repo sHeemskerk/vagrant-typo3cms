@@ -1,0 +1,18 @@
+# file: locale/tasks/main.yml
+
+- name: Ensure Locale exists
+  sudo: yes
+  locale_gen: name={{ locale }} state=present
+
+- name: Update Locale
+  sudo: yes
+  command: /usr/sbin/update-locale LANG={{ locale }} LC_ALL=
+
+- name: Set /etc/localtime
+  sudo: yes
+  file: src=/usr/share/zoneinfo/{{ timezone }} dest=/etc/localtime
+
+- name: Set /etc/timezone
+  sudo: yes
+  template: src=etc_timezone.j2 dest=/etc/timezone
+  notify: update tzdata

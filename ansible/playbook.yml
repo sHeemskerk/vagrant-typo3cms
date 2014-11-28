@@ -24,6 +24,7 @@
     php_ppa: php5-oldstable
   roles:
     - init
+    - locale
     - apache
     - mysql
     - php5
