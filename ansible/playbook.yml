@@ -22,7 +22,7 @@
     - php5-dev #needed for xdebug
     - php-pear #needed for xdebug
     - php5-xdebug
-    php_ppa: php5-oldstable
+    php_ppa: php5
   roles:
     - init
     - locale
