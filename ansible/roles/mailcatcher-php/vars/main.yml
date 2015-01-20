@@ -1,0 +1,7 @@
+---
+mc_ini_file:                       "mailcatcher.ini"
+mc_php_base_path:                  "/etc/php5/mods-available/{{ mc_ini_file }}"
+mc_php_symlink_path:               "../../mods-available/{{ mc_ini_file }}"
+mc_php_cli_path:                   "/etc/php5/cli/conf.d/99-{{ mc_ini_file }}"
+mc_php_apache_path:                "/etc/php5/apache2/conf.d/99-{{ mc_ini_file }}"
+mc_sendmail_cmd:                   "/usr/bin/env /opt/ruby-1.9.3-p551/bin/catchmail"
