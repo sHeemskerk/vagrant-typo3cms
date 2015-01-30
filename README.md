@@ -19,11 +19,11 @@ Environment
    ```
    This user is also allowed to connect from outside the virtual machine.
 
-* __PHP__: PHP 5.4.x (with Xdebug v2.2.3)
+* __PHP__: PHP 5.5.x (with Xdebug v2.2.5)
 
 Installation
 --------------
-*used VirtualBox 4.3.14, Vagrant 1.6.3 & Ansible 1.6.10*
+*used VirtualBox 4.3.20, Vagrant 1.7.2 & Ansible 1.8.2*
 
 1. Install both: [Vagrant](https://www.vagrantup.com/downloads.html) & [Ansible](http://docs.ansible.com/intro_installation.html)
 
@@ -46,9 +46,9 @@ Installation
 5. Create folder `vHosts/t3-cms/Web` and extract TYPO3 source/dummy package:
 
     ```
-    wget "http://get.typo3.org/6.2.5" -O typo3_src.tgz 
+    wget "http://get.typo3.org/6.2.9" -O typo3_src.tgz 
     tar xvzf typo3_src.tgz 
-    mv typo3_src-6.2.5 typo3_src 
+    mv typo3_src-6.2.9 typo3_src 
     ln -s typo3_src/typo3 typo3 
     ln -s typo3_src/index.php index.php 
     touch FIRST_INSTALL
