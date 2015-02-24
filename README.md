@@ -21,6 +21,8 @@ Environment
 
 * __PHP__: PHP 5.5.x (with Xdebug v2.2.5)
 
+* __MailCatcher__: 0.6.1 (check out http://192.168.13.37:1080)
+
 Installation
 --------------
 *used VirtualBox 4.3.20, Vagrant 1.7.2 & Ansible 1.8.2*
