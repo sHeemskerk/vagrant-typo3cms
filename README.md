@@ -43,7 +43,7 @@ Installation
     sudo sh -c 'echo "192.168.13.37 t3-cms.dev" >> /etc/hosts'
     ``` 
 
-5. Create folder `vHosts/t3-cms/Web` and extract TYPO3 source/dummy package:
+5. Create folder `mkdir -p vHosts/t3-cms/Web` and extract TYPO3 source/dummy package:
 
     ```
     wget "http://get.typo3.org/6.2.9" -O typo3_src.tgz 
@@ -54,11 +54,11 @@ Installation
     touch FIRST_INSTALL
     ```
 
-5. Setup TYPO3
+6. Setup TYPO3
 
      Navigate to http://t3-cms.dev in your browser and follow installation instructions
 
-6. Run command `vagrant halt` to shutdown
+7. Run command `vagrant halt` to shutdown
 
 ToDos
 --------------
