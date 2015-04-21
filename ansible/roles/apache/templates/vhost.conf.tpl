@@ -33,6 +33,7 @@ NameVirtualHost *:80
     ServerAlias *.dev
     VirtualDocumentRoot {{ doc_root }}/%-2+/Web
     SetEnv TYPO3_CONTEXT Development
+    SetEnv FLOW_CONTEXT Development
 </VirtualHost>
  
 <VirtualHost *:80>
@@ -40,4 +41,5 @@ NameVirtualHost *:80
     ServerAlias *.prod
     VirtualDocumentRoot {{ doc_root }}/%-2+/Web
     SetEnv TYPO3_CONTEXT Production
+    SetEnv FLOW_CONTEXT Production
 </VirtualHost>
